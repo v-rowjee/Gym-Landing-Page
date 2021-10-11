@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gym-X Login</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles/login.css" />
+  </head>
+
+  <body class="bg">
+    <div class="row g-0 vh-100 w-100">
+      <div class="col-auto g-0 m-auto form-box p-5">
+        <div class="d-flex justify-content-center pb-5">
+          <button class="btn btn-primary p-2">
+            <a class="px-5 py-3" href="/login.html">Log In</a>
+          </button>
+
+          <button class="btn btn-default p-2">
+            <a class="px-5 py-3" href="/register.html"> Register </a>
+          </button>
+        </div>
+
+        <!-- LOGIN FORM -->
+        <form action="login_get.php" method="get">
+          <div class="mb-3">
+            <label for="log-email" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="log-email"
+              name="log-email"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="log-password" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="log-password"
+              name="log-password"
+            />
+          </div>
+          <div class="mb-3 form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="log-check-password"
+              name="log-check-password"
+            />
+            <label class="form-check-label mb-3" for="log-check-password"
+              >Remember password</label
+            >
+          </div>
+          <button type="submit" class="btn btn-primary w-100 mb-5">
+            Log In
+          </button>
+
+          <div class="row text-center my-4">
+            <h6 class="line"><span>or sign in with social media</span></h6>
+          </div>
+          <div class="text-center">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="./script/script.js"></script>
+</html>
