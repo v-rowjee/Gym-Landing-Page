@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap");
+
+:root {
+  --primary: #0d6efd;
+  --dark: #222;
+  --light: #f5f5f5;
+  --body: #888;
+  --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  line-height: 1.7;
+  color: var(--body);
+  background-color: var(--light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-3,
+.display-4 {
+  font-weight: 700;
+  color: var(--light);
+}
+
+p {
+  color: var(--light);
+  font-weight: 500;
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+.navbar {
+  box-shadow: var(--box-shadow);
+  width: 100vw;
+}
+.navbar-bg {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+}
+.nav-link:hover {
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 3px;
+  margin-bottom: 3px;
+}
+
+button a {
+  color: var(--light);
+}
+button a:hover {
+  color: var(--light);
+}
+
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+    url(/img/cover-1.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+
+section {
+  padding: 6% 0;
+}
+section p {
+  color: var(--body);
+}
+section h1 {
+  color: var(--dark);
+}
+.row {
+  margin: 2% 0;
+}
+
+.card {
+  box-shadow: var(--box-shadow);
+  background-color: transparent;
+  margin: 5%;
+  transition: all 1s ease;
+  height: 600px;
+}
+.card:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.card-title {
+  color: #666;
+}
+.card-img-top {
+  height: 18rem;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  box-shadow: var(--box-shadow);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.cover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(/img/cover-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.cover .display-1 {
+  color: var(--light);
+  font-weight: 300;
+  text-anchor: middle;
+}
+
+/* PRICING */
+.pricing-card {
+  min-width: 275px;
+  margin: 30px 10px;
+  padding: 30px 20px;
+  background: rgba(136, 136, 136, 0.2);
+  border-radius: 16px;
+  box-shadow: var(--box-shadow);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(87, 90, 92, 0.3);
+}
+
+.pricing-card h6 {
+  color: var(--body);
+  padding: 10px 0px;
+}
+.pricing-card h1 {
+  color: var(--primary);
+  padding: 15px 0px;
+}
+.pricing-card h5 {
+  color: var(--dark);
+  padding: 15px 0px;
+  text-decoration: underline;
+}
+
+/* ABOUT US */
+#about-us {
+  background-color: var(--dark);
+}
+#about-us h1 {
+  color: var(--light);
+}
+#about-us p {
+  color: var(--body);
+}
+
+.portrait-main {
+  height: 500px;
+  margin: 10% 0;
+  box-shadow: 0.5rem 0.5rem #111, -0.5rem -0.5rem var(--primary);
+}
+.portrait-main:hover {
+  box-shadow: 1rem 1rem #111, -1rem -1rem var(--primary);
+}
+.portrait-main-text {
+  border-left: 3px solid var(--primary);
+  margin-left: 10%;
+}
+
+.team {
+  margin-top: 10%;
+}
+
+.team-card {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  min-width: 200px;
+  padding-bottom: 30px;
+  background-image: linear-gradient(to bottom #333, white);
+  margin: 50px 15px;
+  box-shadow: 0.5rem 0.5rem #111, -0.5rem -0.5rem var(--primary);
+  opacity: 0.6;
+  filter: brightness(50%);
+  transition: all 1s ease;
+}
+.team-card:hover {
+  opacity: 1;
+  transform: scale(1.03);
+  filter: brightness(100%);
+}
+
+.team-card img {
+  object-fit: cover;
+  object-position: top;
+  padding: 10px;
+  margin-bottom: 10%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0.3rem 0.5rem var(--body);
+}
+.social-media-logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0% 30px;
+}
+ion-icon {
+  padding: 15px;
+  font-size: 23px;
+}
+ion-icon[name="logo-instagram"]:hover {
+  color: #c13584;
+}
+ion-icon[name="logo-twitter"]:hover {
+  color: #1da1f2;
+}
+ion-icon[name="logo-facebook"]:hover {
+  color: #1877f2;
+}
+ion-icon[name="logo-whatsapp"]:hover {
+  color: #2bb741;
+}
+
+.page-break-1 {
+  background-color: #222;
+  opacity: 0.5;
+  height: 5vh;
+}
+
+/* Contact */
+#contact h5,
+h3 {
+  color: var(--body);
+}
+.contact-details {
+  border-left: 3px solid var(--primary);
+  padding-left: 15px;
+}
+
+#map {
+  background-color: transparent;
+  margin: 0% 5%;
+  overflow: hidden;
+}
+footer {
+  width: 100%;
+  background-color: var(--dark);
+}
+
+.footer-list ul li {
+  list-style: none;
+  margin-left: -5%;
+}
+.footer-list ul li a {
+  text-decoration: none;
+  color: var(--light);
+  font-weight: 300;
+}
+.footer-list ul li a:hover {
+  opacity: 0.8;
+}
