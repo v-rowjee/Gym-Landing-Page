@@ -32,11 +32,15 @@ a:hover {
 }
 
 .bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
     url(/img/cover-3.jpg);
   background-position: center;
   background-size: cover;
 }
+/* 
+.bg {
+  background-color: var(--dark);
+} */
 
 .form-box {
   width: 600px;
