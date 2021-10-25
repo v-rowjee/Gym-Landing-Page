@@ -23,4 +23,4 @@ if($row['email'] == $email && $row['password'] == $password){
 } else "Failed to login..."
 
 
->
+?>
