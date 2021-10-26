@@ -1,5 +1,5 @@
 # Gym-Landing-Page
-A basic landing page for a gym company mading using Bootstrap 5 framework. 
+A basic landing page for a gym company made using Bootstrap 5 framework. 
 
 ## Features
 
