@@ -33,7 +33,7 @@ a:hover {
 
 .bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
-    url(/img/cover-3.jpg);
+    url(/Gym-Landing-Page/img/cover-3.jpg);
   background-position: center;
   background-size: cover;
 }
