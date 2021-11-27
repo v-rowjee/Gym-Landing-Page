@@ -2,7 +2,9 @@
 
 A responsive landing page for a gym company made using Bootstrap 5 framework. 
 
-__Demo:__ https://v-rowjee.github.io/Gym-Landing-Page/
+
+
+__Demo:__ <a href="https://v-rowjee.github.io/Gym-Landing-Page/" target="_blank">https://v-rowjee.github.io/Gym-Landing-Page/</a>
 
 ## Features
 
