@@ -17,471 +17,554 @@
   </head>
 
   <body>
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light navbar-bg">
-          <div class="container text-center">
-            <a class="navbar-brand" href="#">GYM-X</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav "
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto me-auto">
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="#services">Services</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="#pricing">Pricing</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="#about-us">About us</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-              </ul>
-              <button
-                id="login-btn"
-                class="btn btn-primary me-2"
-                type="button"
-              >
-                <a href="./login.html">Log In</a>
-              </button>
-              <button id="join-now-btn" class="btn btn-primary me-2">
-                <a href="./register.html">Join Now</a>
-              </button>
-            </div>
-          </div>
-        </nav>
-        <!-- NAVBAR -->
-
-        <!-- HOME -->
-        <div id="home" class="home vh-100 d-flex align-items-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-5" data-aos="fade-right" data-aos-offset="500">
-                <h1 class="display-3 py-3">Dont Be Afraid Of A Beginning</h1>
-                <p>
-                  The first secret to success is to simply master your ability
-                  to get started, to take the first step. If you want to get
-                  physically fit, simply pack a gym bag everyday and get in the
-                  car. Once you do, where else are you going to go?
-                </p>
-                <a href="#services" class="btn btn-primary me-2">Get started</a>
-                <a href="#pricing" class="btn btn-outline-light">Pricing</a>
-              </div>
-            </div>
-          </div>
+    <div id="sidenav-bg"></div>
+    <div id="sidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <!-- LOGIN FORM -->
+      <form id="login-form" action="authentication.php" method="POST">
+        <div class="mb-3">
+          <label for="log-email" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="log-email"
+            name="log-email"
+            aria-describedby="emailHelp"
+          />
         </div>
-        <!-- HOME -->
+        <div class="mb-3">
+          <label for="log-password" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="log-password"
+            name="log-password"
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="log-check-password"
+            name="log-check-password"
+          />
+          <label class="form-check-label mb-3" for="log-check-password"
+            >Remember password</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary w-100 mb-5">Log In</button>
 
-        <!-- SERVICES -->
-        <section id="services">
-          <div class="container vh-auto">
-            <div class="row">
-              <div class="col-md-8 mx-auto text-center" data-aos="fade-up">
-                <h5 class="text-primary">SERVICES</h5>
-                <h1 class="text-center mb-4">
-                  One of the best gym in Mauritius
-                </h1>
-                <p class="text-center mb-5">
-                  Our training platform offers world-class, signature
-                  programming designed to get you stronger and fitter, fatter
-                  than ever before, and ready to win at the sport of life.
-                </p>
-              </div>
-            </div>
-            <div class="row g-3 justify-content-around">
-              <div class="col-md-5" data-aos="zoom-in">
-                <div class="card">
-                  <img src="img/jjtsu.jpg" class="card-img-top" />
-                  <div class="card-body">
-                    <h5 class="card-title">Ju Jitsu</h5>
-                    <p class="card-text">
-                      In this total body workout, you'll learn self-defence
-                      techniques from a variety of disciplines in a safe
-                      environment to improve your confidence. Learn a variety of
-                      martial arts techniques, moves, kicks, punches, twists and
-                      turns for increased balance and body strength.
-                    </p>
-                    <a href="#contact" class="btn btn-primary">Enroll Now</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-5" data-aos="zoom-in" data-aos-delay="100">
-                <div class="card">
-                  <img src="img/magic-moves.jpg" class="card-img-top" />
-                  <div class="card-body">
-                    <h5 class="card-title">Magic Moves</h5>
-                    <p class="card-text">
-                      Join the party! Magic Moves is a dance based workout. The
-                      styles of dance include hip hop, samba, mambo , salsa and
-                      more. If you love to swing your hips and groove to the
-                      beat then Magic Moves is a must try.
-                    </p>
-                    <a href="#contact" class="btn btn-primary">Dance Now</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-5" data-aos="zoom-in">
-                <div class="card">
-                  <img src="img/weight-lifting.jpeg" class="card-img-top" />
-                  <div class="card-body">
-                    <h5 class="card-title">Weight Lifting</h5>
-                    <p class="card-text">
-                      Our personal trainers are here to help all members seeking
-                      to make the most out of their workouts. They are very
-                      friendly, knowledgeable and highly motivated in helping
-                      you achieve your fitness goals.
-                    </p>
-                    <a href="#contact" class="btn btn-primary">Lift Now</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-5" data-aos="zoom-in" data-aos-delay="100">
-                <div class="card">
-                  <img src="img/fat-fighter.jpg" class="card-img-top" />
-                  <div class="card-body">
-                    <h5 class="card-title">Fat Fighter X</h5>
-                    <p class="card-text">
-                      If you really want to lose weight fast, then this program
-                      has got you covered. We have group fitness classes all
-                      week long. Fat Fighter X classes are meant to make you
-                      move, sweat and get a little out of breath – it’s all part
-                      of the fun!
-                    </p>
-                    <a href="#contact" class="btn btn-primary">Fight Now</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- SERVICES -->
+        <div class="row text-center">
+          <h6>or sign in with social media</h6>
+        </div>
+        <div class="row text-center">
+          <a href="#" class="col"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#" class="col"><ion-icon name="logo-google"></ion-icon></a>
+          <a href="#" class="col"><ion-icon name="logo-twitter"></ion-icon></a>
+        </div>
+      </form>
 
-        <section class="home cover">
-          <div class="container text-center">
-            <h1 class="display-1">No Pain No Gain</h1>
-          </div>
-        </section>
-
-        <!-- PRICING -->
-        <section id="pricing">
-          <div class="container vh-auto">
-            <div class="row">
-              <div class="col-md-8 mx-auto text-center" data-aos="fade-up">
-                <h5 class="text-primary">PRICING</h5>
-                <h1 class="text-center mb-4">
-                  Take Your Fitness To The Next Level
-                </h1>
-                <p class="text-center mb-5">
-                  Pricing blablabla Lorem ipsum dolor sit amet consectetur
-                  adipisicing elit. Sapiente, vitae sed fugit corrupti accusamus
-                  nulla.
-                </p>
-              </div>
-            </div>
-            <div class="row text-center">
-              <h3>Membership Entry Fee Rs 1000</h3>
-            </div>
-            <div class="row text-center justify-content-around">
-              <div class="col-xxl-2 col-lg-4 col-md-3 pricing-card">
-                <h5><a href="#services">Weight Lifting</a></h5>
-                <h1>Rs 800*</h1>
-                <h6>Every Opening Days</h6>
-                <h6>Every Opening Hours</h6>
-              </div>
-              <div class="col-xxl-2 col-lg-4 col-md-3 pricing-card">
-                <h5><a href="#services">Magic Moves</a></h5>
-                <h1>Rs 600</h1>
-                <h6>Tuesday & Friday</h6>
-                <h6>5.30pm - 6.45pm</h6>
-              </div>
-              <div class="col-xxl-2 col-lg-4 col-md-3 pricing-card">
-                <h5><a href="#services">Ju Jitsu</a></h5>
-                <h1>Rs 500</h1>
-                <h6>Tuesday & Friday</h6>
-                <h6>7pm - 8pm</h6>
-              </div>
-              <div class="col-xxl-2 col-lg-4 col-md-3 pricing-card">
-                <h5><a href="#services">Fat Fighter X</a></h5>
-                <h1>Rs 800</h1>
-                <h6>Monday & Wednesday</h6>
-                <h6>6pm - 7.30pm</h6>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- PRICING -->
-
-        <!-- ABOUT US -->
-        <section id="about-us">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 mx-auto text-center" data-aos="fade-up">
-                <h5 class="text-primary">ABOUT US</h5>
-                <h1 class="text-center mb-4">Let Us Share Our Knowledge</h1>
-                <p class="text-center mb-5">
-                  Just like you, we’re passionate about working out and staying
-                  fit. After more than 40 years in the fitness industry, we’ve
-                  learned a thing or two about nutrition, strength training,
-                  weight loss, and how to have fun staying active. Let us share
-                  our knowledge!
-                </p>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-auto">
-                <img src="img/portrait-main.jpg" class="portrait-main" />
-              </div>
-              <div
-                class="col-md-4 my-auto portrait-main-text"
-                data-aos="fade-left"
-              >
-                <h2 class="pb-3">MEET JAMES FITZGERALD, FOUNDER OF GYM-X</h2>
-                <p class="pb-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Tempora iusto iure minima error deserunt vitae quaerat nam
-                  assumenda ut voluptates culpa consectetur, beatae repellat.
-                  Porro iste quod, odio ex, omnis, repudiandae quaerat dolorum
-                  eligendi officiis quia fugit culpa consequatur recusandae.
-                </p>
-                <span>
-                  <ion-icon name="logo-instagram"></ion-icon>
-                  <ion-icon name="logo-twitter"></ion-icon>
-                  <ion-icon name="logo-facebook"></ion-icon>
-                  <ion-icon name="logo-whatsapp"></ion-icon>
-                </span>
-              </div>
-            </div>
-            <div class="row team">
-              <h3 class="text-center" data-aos="fade-up">MEET THE TEAM</h3>
-              <div class="col-xl-3 col-md-6" data-aos="zoom-in-up">
-                <div class="row team-card text-center">
-                  <img src="img/team-1.jpg" />
-                  <h4>Andres Hernandez</h4>
-                  <p>Personal Trainer</p>
-                  <span class="social-media-logo">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                    <ion-icon name="logo-twitter"></ion-icon>
-                    <ion-icon name="logo-facebook"></ion-icon>
-                    <ion-icon name="logo-whatsapp"></ion-icon>
-                  </span>
-                </div>
-              </div>
-              <div
-                class="col-xl-3 col-md-6"
-                data-aos="zoom-in-up"
-                data-aos-duration="1100"
-              >
-                <div class="row team-card text-center">
-                  <img src="img/team-2.jpg" />
-                  <h4>Lorenzo Fraquelli</h4>
-                  <p>Personal Trainer</p>
-                  <span class="social-media-logo">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                    <ion-icon name="logo-twitter"></ion-icon>
-                    <ion-icon name="logo-facebook"></ion-icon>
-                    <ion-icon name="logo-whatsapp"></ion-icon>
-                  </span>
-                </div>
-              </div>
-              <div
-                class="col-xl-3 col-md-6"
-                data-aos="zoom-in-up"
-                data-aos-duration="1300"
-              >
-                <div class="row team-card text-center">
-                  <img src="img/team-3.jpg" />
-                  <h4>Anne Roughton</h4>
-                  <p>Coach</p>
-                  <span class="social-media-logo">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                    <ion-icon name="logo-twitter"></ion-icon>
-                    <ion-icon name="logo-facebook"></ion-icon>
-                    <ion-icon name="logo-whatsapp"></ion-icon>
-                  </span>
-                </div>
-              </div>
-              <div
-                class="col-xl-3 col-md-6"
-                data-aos="zoom-in-up"
-                data-aos-duration="1500"
-              >
-                <div class="row team-card text-center">
-                  <img src="img/team-4.jpg" />
-                  <h4>Dianna Banch</h4>
-                  <p>Coach</p>
-                  <span class="social-media-logo">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                    <ion-icon name="logo-twitter"></ion-icon>
-                    <ion-icon name="logo-facebook"></ion-icon>
-                    <ion-icon name="logo-whatsapp"></ion-icon>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- ABOUT US -->
-        <div class="container-fluid w-100 p-0 page-break-1">
-          <div class="container-fluid w-100 page-break-2"></div>
+      <!-- REGISTER FORM-->
+      <form id="register-form" action="authentication.php" method="POST">
+        <div class="mb-3">
+          <label for="reg-email" class="form-label">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="reg-email"
+            name="reg-email"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="reg-password1" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="reg-password1"
+            name="reg-password1"
+          />
+        </div>
+        <div class="mb-5">
+          <label for="reg-password2" class="form-label"
+            >Re-enter Password</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="reg-password2"
+            name="reg-password2"
+          />
         </div>
 
-        <!-- Contact -->
-        <section id="contact">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 m-auto text-center" data-aos="fade-up">
-                <h5 class="text-primary">CONTACT</h5>
-                <h1 class="text-center mb-4">Get In Touch</h1>
-                <p class="text-center mb-5">
-                  Any question or remarks? Fill up the form and our Team will
-                  get back to you with-in 24hrs.
-                </p>
-              </div>
-            </div>
-            <div class="card h-auto p-5 mb-5">
-              <div class="row">
-                <div class="col-md-5">
-                  <h5>Say Hi To The Team!</h5>
-                  <h1>Contact Information</h1>
-                </div>
-              </div>
-              <div class="row justify-content-between">
-                <div class="col-md-5">
-                  <div class="contact-details">
-                    <h3 class="text-primary">opening hours</h3>
-                    <p>Monday - Friday - 06H00-12H00 & 13H00-21H00</p>
-                    <p>Saturday - 06H00-12H00 & 13H00-18H00</p>
-                    <p>Sunday and Public Holiday - 07H00-12H00</p>
-                  </div>
-                  <div class="contact-details">
-                    <h3 class="text-primary">address</h3>
-                    <p>Candos Vacoas Road</p>
-                    <p>Royal Road Castel, Vacoas-Phoenix</p>
-                  </div>
-                  <div class="contact-details">
-                    <h3 class="text-primary">support</h3>
-                    <p>gymx@gmail.com</p>
-                    <p>+230 5 7619 946</p>
-                    <p>+230 5 7284 956</p>
-                  </div>
-                  <br />
-                  <span>
-                    <ion-icon name="logo-instagram"></ion-icon>
-                    <ion-icon name="logo-twitter"></ion-icon>
-                    <ion-icon name="logo-facebook"></ion-icon>
-                    <ion-icon name="logo-whatsapp"></ion-icon>
-                  </span>
-                </div>
+        <button type="submit" class="btn btn-primary w-100 mb-5">
+          Register
+        </button>
+        <div class="row text-center">
+          <h6>or sign up with social media</h6>
+        </div>
+        <div class="row text-center">
+          <a href="#" class="col"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#" class="col"><ion-icon name="logo-google"></ion-icon></a>
+          <a href="#" class="col"><ion-icon name="logo-twitter"></ion-icon></a>
+        </div>
+      </form>
+    </div>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light navbar-bg">
+      <div class="container text-center">
+        <a class="navbar-brand" href="#">GYM-X</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav "
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto me-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#about-us">About us</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <button
+            id="login-btn"
+            class="btn btn-primary me-2"
+            type="button"
+            onclick="openNavLogin()"
+          >
+            Log In
+          </button>
+          <button
+            id="join-now-btn"
+            class="btn btn-primary me-2"
+            onclick="openNavRegister()"
+          >
+            Join Now
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR -->
 
-                <div class="col-md-5">
-                  <form class="needs-validation">
-                    <div class="mb-3">
-                      <label for="inputName" class="form-label">Name</label>
-                      <input type="name" class="form-control" id="inputName" />
-                    </div>
-                    <div class="mb-3">
-                      <label for="inputEmail" class="form-label"
-                        >Email Address</label
-                      >
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="inputEmail"
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label for="inputMessage" class="form-label"
-                        >Tell Us About It</label
-                      >
-                      <textarea
-                        class="form-control"
-                        id="inputMessage"
-                        rows="8"
-                      ></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">
-                      Submit
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <h1 class="text-center mt-5 mb-3">Where To Find Us</h1>
-            <div id="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d59876.252458351315!2d57.464119200533936!3d-20.289263201653547!3m2!1i1024!2i768!4f13.1!2m1!1swarriors%20gym%20mauritius!5e0!3m2!1sen!2smu!4v1632074662122!5m2!1sen!2smu"
-                width="1280"
-                height="400"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
-            </div>
+    <!-- HOME -->
+    <div id="home" class="home vh-100 d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5" data-aos="fade-right" data-aos-offset="500">
+            <h1 class="display-3 py-3">Dont Be Afraid Of A Beginning</h1>
+            <p>
+              The first secret to success is to simply master your ability to
+              get started, to take the first step. If you want to get physically
+              fit, simply pack a gym bag everyday and get in the car. Once you
+              do, where else are you going to go?
+            </p>
+            <a href="#services" class="btn btn-primary me-2">Get started</a>
+            <a href="#pricing" class="btn btn-outline-light">Pricing</a>
           </div>
-        </section>
-        <!-- Contact -->
-
-        <!-- FOOTER -->
-        <footer>
-          <div class="row p-5 justify-content-around">
-            <div class="col-md-3 footer-list">
-              <h6>Quick links</h6>
-              <div class="row">
-                <div class="col-4">
-                  <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                  </ul>
-                </div>
-                <div class="col-auto">
-                  <ul>
-                    <li><a href="#">Sign In</a></li>
-                    <li><a href="#">Resgister Now</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3 footer-list">
-              <h6>Our services</h6>
-              <ul>
-                <li><a href="#services">Ju Jitsu</a></li>
-                <li><a href="#services">Magic Moves</a></li>
-                <li><a href="#services">Weight Lifting</a></li>
-                <li><a href="#services">Fat Fighter X</a></li>
-              </ul>
-            </div>
-            <div class="col-md-3 footer-list">
-              <h6>Get in Touch</h6>
-              <ul>
-                <li>
-                  <ion-icon name="logo-instagram"></ion-icon>
-                  <ion-icon name="logo-twitter"></ion-icon>
-                  <ion-icon name="logo-facebook"></ion-icon>
-                  <ion-icon name="logo-whatsapp"></ion-icon>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </footer>
-        <!-- FOOTER -->
+        </div>
       </div>
     </div>
+    <!-- HOME -->
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container vh-auto">
+        <div class="row">
+          <div class="col-md-8 mx-auto text-center" data-aos="fade-up">
+            <h5 class="text-primary">SERVICES</h5>
+            <h1 class="text-center mb-4">One of the best gym in Mauritius</h1>
+            <p class="text-center mb-5">
+              Our training platform offers world-class, signature programming
+              designed to get you stronger and fitter, fatter than ever before,
+              and ready to win at the sport of life.
+            </p>
+          </div>
+        </div>
+        <div class="row g-3 justify-content-around">
+          <div class="col-md-5" data-aos="zoom-in">
+            <div class="card">
+              <img src="img/jjtsu.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Ju Jitsu</h5>
+                <p class="card-text">
+                  In this total body workout, you'll learn self-defence
+                  techniques from a variety of disciplines in a safe environment
+                  to improve your confidence. Learn a variety of martial arts
+                  techniques, moves, kicks, punches, twists and turns for
+                  increased balance and body strength.
+                </p>
+                <a href="#contact" class="btn btn-primary">Enroll Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card">
+              <img src="img/magic-moves.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Magic Moves</h5>
+                <p class="card-text">
+                  Join the party! Magic Moves is a dance based workout. The
+                  styles of dance include hip hop, samba, mambo , salsa and
+                  more. If you love to swing your hips and groove to the beat
+                  then Magic Moves is a must try.
+                </p>
+                <a href="#contact" class="btn btn-primary">Dance Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5" data-aos="zoom-in">
+            <div class="card">
+              <img src="img/weight-lifting.jpeg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Weight Lifting</h5>
+                <p class="card-text">
+                  Our personal trainers are here to help all members seeking to
+                  make the most out of their workouts. They are very friendly,
+                  knowledgeable and highly motivated in helping you achieve your
+                  fitness goals.
+                </p>
+                <a href="#contact" class="btn btn-primary">Lift Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card">
+              <img src="img/fat-fighter.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">Fat Fighter X</h5>
+                <p class="card-text">
+                  If you really want to lose weight fast, then this program has
+                  got you covered. We have group fitness classes all week long.
+                  Fat Fighter X classes are meant to make you move, sweat and
+                  get a little out of breath – it’s all part of the fun!
+                </p>
+                <a href="#contact" class="btn btn-primary">Fight Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICES -->
+
+    <section class="home cover">
+      <div class="container text-center">
+        <h1 class="display-1">No Pain No Gain</h1>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+      <div class="container vh-auto">
+        <div class="row">
+          <div class="col-md-8 mx-auto text-center" data-aos="fade-up">
+            <h5 class="text-primary">PRICING</h5>
+            <h1 class="text-center mb-4">
+              Take Your Fitness To The Next Level
+            </h1>
+            <p class="text-center mb-5">
+              Pricing blablabla Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Sapiente, vitae sed fugit corrupti accusamus
+              nulla.
+            </p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <h3>Membership Entry Fee Rs 1000</h3>
+        </div>
+        <div class="row text-center justify-content-around">
+          <div class="col-xxl-2 col-lg-4 col-md-3 pricing-card">
+            <h5><a href="#services">Weight Lifting</a></h5>
+            <h1>Rs 800*</h1>
+            <h6>Every Opening Days</h6>
+            <h6>Every Opening Hours</h6>
+          </div>
+          <div class="col-xxl-2 col-lg-4 col-md-3 pricing-card">
+            <h5><a href="#services">Magic Moves</a></h5>
+            <h1>Rs 600</h1>
+            <h6>Tuesday & Friday</h6>
+            <h6>5.30pm - 6.45pm</h6>
+          </div>
+          <div class="col-xxl-2 col-lg-4 col-md-3 pricing-card">
+            <h5><a href="#services">Ju Jitsu</a></h5>
+            <h1>Rs 500</h1>
+            <h6>Tuesday & Friday</h6>
+            <h6>7pm - 8pm</h6>
+          </div>
+          <div class="col-xxl-2 col-lg-4 col-md-3 pricing-card">
+            <h5><a href="#services">Fat Fighter X</a></h5>
+            <h1>Rs 800</h1>
+            <h6>Monday & Wednesday</h6>
+            <h6>6pm - 7.30pm</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- PRICING -->
+
+    <!-- ABOUT US -->
+    <section id="about-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto text-center" data-aos="fade-up">
+            <h5 class="text-primary">ABOUT US</h5>
+            <h1 class="text-center mb-4">Let Us Share Our Knowledge</h1>
+            <p class="text-center mb-5">
+              Just like you, we’re passionate about working out and staying fit.
+              After more than 40 years in the fitness industry, we’ve learned a
+              thing or two about nutrition, strength training, weight loss, and
+              how to have fun staying active. Let us share our knowledge!
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-auto">
+            <img src="img/portrait-main.jpg" class="portrait-main" />
+          </div>
+          <div class="col-md-4 my-auto portrait-main-text" data-aos="fade-left">
+            <h2 class="pb-3">MEET JAMES FITZGERALD, FOUNDER OF GYM-X</h2>
+            <p class="pb-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+              iusto iure minima error deserunt vitae quaerat nam assumenda ut
+              voluptates culpa consectetur, beatae repellat. Porro iste quod,
+              odio ex, omnis, repudiandae quaerat dolorum eligendi officiis quia
+              fugit culpa consequatur recusandae.
+            </p>
+            <span>
+              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon name="logo-twitter"></ion-icon>
+              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </span>
+          </div>
+        </div>
+        <div class="row team">
+          <h3 class="text-center" data-aos="fade-up">MEET THE TEAM</h3>
+          <div class="col-xl-3 col-md-6" data-aos="zoom-in-up">
+            <div class="row team-card text-center">
+              <img src="img/team-1.jpg" />
+              <h4>Andres Hernandez</h4>
+              <p>Personal Trainer</p>
+              <span class="social-media-logo">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </span>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="1100"
+          >
+            <div class="row team-card text-center">
+              <img src="img/team-2.jpg" />
+              <h4>Lorenzo Fraquelli</h4>
+              <p>Personal Trainer</p>
+              <span class="social-media-logo">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </span>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="1300"
+          >
+            <div class="row team-card text-center">
+              <img src="img/team-3.jpg" />
+              <h4>Anne Roughton</h4>
+              <p>Coach</p>
+              <span class="social-media-logo">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </span>
+            </div>
+          </div>
+          <div
+            class="col-xl-3 col-md-6"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
+            <div class="row team-card text-center">
+              <img src="img/team-4.jpg" />
+              <h4>Dianna Banch</h4>
+              <p>Coach</p>
+              <span class="social-media-logo">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT US -->
+    <div class="container-fluid w-100 p-0 page-break-1">
+      <div class="container-fluid w-100 page-break-2"></div>
+    </div>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 m-auto text-center" data-aos="fade-up">
+            <h5 class="text-primary">CONTACT</h5>
+            <h1 class="text-center mb-4">Get In Touch</h1>
+            <p class="text-center mb-5">
+              Any question or remarks? Fill up the form and our Team will get
+              back to you with-in 24hrs.
+            </p>
+          </div>
+        </div>
+        <div class="card h-auto p-5 mb-5">
+          <div class="row">
+            <div class="col-md-5">
+              <h5>Say Hi To The Team!</h5>
+              <h1>Contact Information</h1>
+            </div>
+          </div>
+          <div class="row justify-content-between">
+            <div class="col-md-5">
+              <div class="contact-details">
+                <h3 class="text-primary">opening hours</h3>
+                <p>Monday - Friday - 06H00-12H00 & 13H00-21H00</p>
+                <p>Saturday - 06H00-12H00 & 13H00-18H00</p>
+                <p>Sunday and Public Holiday - 07H00-12H00</p>
+              </div>
+              <div class="contact-details">
+                <h3 class="text-primary">address</h3>
+                <p>Candos Vacoas Road</p>
+                <p>Royal Road Castel, Vacoas-Phoenix</p>
+              </div>
+              <div class="contact-details">
+                <h3 class="text-primary">support</h3>
+                <p>gymx@gmail.com</p>
+                <p>+230 5 7619 946</p>
+                <p>+230 5 7284 956</p>
+              </div>
+              <br />
+              <span>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+              </span>
+            </div>
+
+            <div class="col-md-5">
+              <form class="needs-validation">
+                <div class="mb-3">
+                  <label for="inputName" class="form-label">Name</label>
+                  <input type="name" class="form-control" id="inputName" />
+                </div>
+                <div class="mb-3">
+                  <label for="inputEmail" class="form-label"
+                    >Email Address</label
+                  >
+                  <input type="email" class="form-control" id="inputEmail" />
+                </div>
+                <div class="mb-3">
+                  <label for="inputMessage" class="form-label"
+                    >Tell Us About It</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="inputMessage"
+                    rows="8"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <h1 class="text-center mt-5 mb-3">Where To Find Us</h1>
+        <div id="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d59876.252458351315!2d57.464119200533936!3d-20.289263201653547!3m2!1i1024!2i768!4f13.1!2m1!1swarriors%20gym%20mauritius!5e0!3m2!1sen!2smu!4v1632074662122!5m2!1sen!2smu"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="row p-5 justify-content-around">
+        <div class="col-md-3 footer-list">
+          <h6>Quick links</h6>
+          <div class="row">
+            <div class="col-4">
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-auto">
+              <ul>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Resgister Now</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 footer-list">
+          <h6>Our services</h6>
+          <ul>
+            <li><a href="#services">Ju Jitsu</a></li>
+            <li><a href="#services">Magic Moves</a></li>
+            <li><a href="#services">Weight Lifting</a></li>
+            <li><a href="#services">Fat Fighter X</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 footer-list">
+          <h6>Get in Touch</h6>
+          <ul>
+            <li>
+              <ion-icon name="logo-instagram"></ion-icon>
+              <ion-icon name="logo-twitter"></ion-icon>
+              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
